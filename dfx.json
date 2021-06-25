@@ -1,21 +1,23 @@
 {
   "canisters": {
-    "Aave": {
-      "main": "src/Aave/main.mo",
+    "product": {
+      "main": "src/product/main.mo",
       "type": "motoko"
     },
-    "Aave_assets": {
-      "dependencies": [
-        "Aave"
-      ],
-      "frontend": {
-        "entrypoint": "src/Aave_assets/src/index.html"
-      },
-      "source": [
-        "src/Aave_assets/assets",
-        "dist/Aave_assets/"
-      ],
-      "type": "assets"
+    
+    "user":{
+      "main": "src/user/main.mo",
+      "type": "motoko"
+    },
+
+    "reserves":{
+      "main": "src/reserves/main.mo",
+      "type": "motoko"
+    },
+
+    "treasury":{
+      "main": "src/treasury/main.mo",
+      "type": "motoko"
     }
   },
   "defaults": {
